@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.contacts{
+    height: 80vh;
+    width: 100%;
+    /* background-color: crimson; */
+    /* background-image: url("static/contact.jfif"); */
+}
+.contact_info{
+    height: 20vh;
+    width: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_info h1{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact_form{
+    height: 60vh;
+    width: 100%;
+    /* background-color: coral; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con_fm{
+    height: 50vh;
+    width: 30vw;
+    /* background-color: darkkhaki; */
+    display: flex;
+}
+.con_fm form{
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}
+.form_field{
+    height: 40px;
+    width:45vh ;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}

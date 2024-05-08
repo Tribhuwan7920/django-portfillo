@@ -1,0 +1,91 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfillo</title>
+    <link rel="stylesheet" href="{%static 'style.css' %}">
+    <link rel="stylesheet" href="{%static 'style2.css' %}">
+    <link rel="stylesheet" href="{%static 'style3.css' %}">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{%static 'logo.jpg' %}" alt="no images" class="nav_images">
+            </div>
+            <div class="link">
+                <p class="nav_link">home</p>
+                <p class="nav_link">about</p>
+                <p class="nav_link">contact</p>
+                <p class="nav_link">services</p>
+            </div>
+            <div class="search_br">
+                <input type="search" name="search" id="search" placeholder="search here" class="nav_search">
+                <button type="submit" class="nav_btn_search">search</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- this is our home page of our website  -->
+    <div class="home_concern">
+        <section class="home_page">
+
+            <div class="home_img">
+
+                <img src="{%static 'home_page.jfif' %}" alt="no images" class="home_image">
+
+            </div>
+
+            <div class="home_content">
+                <div class="home_item">
+                    <h1>portfillo website</h1>
+                    <p class="home_para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum sed quos ad, placeat
+                        quis distinctio vitae porro nisi vel dolor amet eveniet totam cumque assumenda aliquid
+                        voluptatum ut sint?
+                    </p>
+                    <button class="home_btn">read more</button>
+                </div>
+                <div class="home_item_img">
+                    <img src="{%static 'home_img.jpg' %}" alt="no images" class="hii_img">
+                </div>
+            </div>
+    </div>
+
+    <!-- this is our contact us page for our portfillo website  -->
+    <section class="contacts">
+        <div class="contact_info">
+            <h1>contact page </h1>
+        </div>
+        <div class="contact_form">
+            <div class="con_fm">
+
+                <form action="/form" method="post">
+                    {% csrf_token %}
+                    <label for="name">
+
+                        <input type="text" name="name" id="name" placeholder="enter your name" class="form_field">
+                    </label>
+
+                    <label for="email">
+                        <input type="email" name="email" id="email" placeholder="enter your email" class="form_field">
+                    </label>
+
+                    <input type="submit" value="submit " class="nav_btn_search">
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+    </section>
+</body>
+
+</html>
